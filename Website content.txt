@@ -1,0 +1,68 @@
+“More than 80% of the interviewees expressed frustration with their current solution. We thought most of the frustration was going to be around the uploading process, but we learned that while uploading lots of photos was painful, people had implemented certain measures, such as selecting a few photos at a time to share. Asked whether they would share more if the process were simpler, most people said yes (a new hypothesis that would need to be tested).”
+
+
+Case Study
+
+Getting paid is an important part of business, but not necessarily the most fun part. Invoicing is not a fun job when you have so many other things on your plate. Still, when you’re a small business owner, getting paid can sometimes be a big battle. Efficiency is key when sending and managing your invoices.
+
+
+——————
+Bio
+——————
+
+With an obsession for well-designed products and a relentless attention to detail, Eric is passionate to be rooted in lives of product’s users. Making meaningful products is what gets him up in the morning (but also strong coffee).  
+
+After shifting his passion from music to technology, Eric studied Art & Design to help build products that help improve the lives of others. Ever since, he and crafted a wide variety of web and mobile experiences working with small startups and established companies. 
+
+Great design is based on understanding other people, how they behave, what they care about, what they want to achieve, and how they work.
+
+ALSO
+—
+http://www.shanestrassberg.com/
+
+
+** Case study **
+Along the way, I was punted outside of my digital comfort zone. Since travel is inherently offline, I could no longer just look at how people interact with screens. I had to figure out ways to study how they interact with others in the real world, which is an unpredictable, scary, and ultimately beautiful thing. Not surprisingly, I learned some lessons along the way.
+
+
+**LinkedIn**
+
+- Leads UX efforts across team, driving  discussion and activities, while participating in delivery, planning, and coordination efforts.
+- Determines best UX solutions based on customer feedback and business goals and helps to determine overall direction, identifying challenges and adapting as needed based on the context of the solution and customer.
+
+
+
+Telus Case study
+- Problem?
+- How we talked to customers (guerrilla in-store, shadowing customer support, existing experience audit)
+
+
+
+**FreshBooks**
+
+*
+FreshBooks allows users to create, manage, and track custom invoices for each client, so business owners always know where their money is — and where it should be.
+*
+
+Despite the wealth of accounting programs out there, for many years service-based small business owners were stuck using unwieldy or bloated software to meet their invoicing needs
+
+Today, the cloud-based accounting platform has been used by more than 10 million people to track time, generate and manage invoices, and even collect credit card or Apple Pay payments — all from one simple, intuitive user interface. Whether accessing through their desktop or mobile devices (or both), small business owners are saving over 16 hours a month streamlining their accounting through FreshBooks.
+
+
+
+***
+FreshBooks Payments Lets You Accept In-Person Payments on Android and iOS
+***
+With invoice creation, sending, and tracking taken care of, FreshBooks turned its attention to the other end of the service-based transaction: payments.
+“We had lots of clients who were billing out of FreshBooks, then trying to collect payments through PayPal,” described Mark. “It just wasn’t a good process and workflow. By bringing that right into the FreshBooks software, we immediately fixed a lot of issues, further improving the accounting process for our clients.”
+(Screenshot of FreshBooks Mobile Application)
+With the FreshBooks app, users can accept credit card and Apple Pay payments from their mobile device.
+According to Mark, solving those payments workflow issues not only saved FreshBooks clients a headache — but a lot of time. Instead of jumping through hoops with the bank, business owners can get started with credit card payments in just a few minutes.
+“We took a look at the pain a lot of our small business clients go through if they want to sign up for a merchant account,” he said. “Then we designed a solution, in conjunction with some of our partners, right in our UI. There, you can sign-up — in one or two clicks — and begin accepting credit cards right away.”
+If there is anything a small business owner needs to save as much of (if not more) as time, it has to be money. When it comes to the cost of payments processing, bigger means better — better prices, that is.
+“We bring the heft of our network into negotiating the best prices for all of our customers,” Mark explained. “We can drive that through a single offering, rather than our customers having to negotiate individually with various gateway providers.”
+***
+Additionally, as a platform dedicated to the specific needs of service-based small business owners, FreshBooks can go anywhere those businesses need to be. Users can log time, create and manage invoices, and even accept payments from their mobile device. FreshBooks now allows users to collect payments via Apple Pay, too.
+***
+“We had lots of customers who required the ability to support in-person payment, so a year ago we began to support mobile, through Android and iOS,” said Mark. “Apple Pay was then a natural extension for us.”
+***

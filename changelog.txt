@@ -1,0 +1,15 @@
+*** Büro HTML5 Template - Changelog *** 
+
+20 Sep 2016 - Version 1.1.2
+	
+	* Added new close method for compact menu
+	* Improved social sharing (Twitter Cards & Open Graph)
+
+08 June 2016 - Version 1.1
+	
+	* Header has been improved using flexbox in order to provide much better performance. This saves some code lines as well
+	* Improved responsive behaviors in tablets
+
+01 June 2016 - Version 1.0
+	
+	* First Release
