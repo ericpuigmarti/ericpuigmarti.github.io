@@ -167,7 +167,7 @@ p > a:after,
 
 p > a:hover:after,
 .links-section.blog .links-holder li a:hover:after,
-.links-section .project-pagination.links-holder li a.pag-arrows:hover:after {
+.links-section .project-pagination.links-holder li a.pag-arrows:hover:after, li .awards:after {
   opacity: 1;
   -webkit-transform: none;
   transform: none;
@@ -178,10 +178,18 @@ p > a:hover:after,
 a:hover { text-decoration: none; }
 
 a li {
-  color: ;
+  display: inline-block;
+  position: relative;
+  color: rgb(29, 29, 29);
+  /*font-weight: bold;*/
 }
 a li:hover {
-  color: 
+  color: #1106FF;
+  text-decoration: underline;
+  -webkit-transition: all .25s ease;
+     -moz-transition: all .25s ease;
+       -o-transition: all .25s ease;
+          transition: all .25s ease;
 }
 
 /* headings */
@@ -876,6 +884,7 @@ h1 a:hover {
 h1 span {
   color: #444444;
 }
+
 /* media queries for better control
    about headings presentation */
 /* Big desktop screens like iMac 27' */
