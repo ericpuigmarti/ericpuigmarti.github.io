@@ -192,15 +192,15 @@ a li:hover {
           transition: all .25s ease;
 }
 #intro em {
-  background: #fff;
-  background: -moz-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%);
-  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(50%,#fff),color-stop(50%,rgba(255,241,151,.5)),color-stop(100%,rgba(255,241,151,.5)));
-  background: -webkit-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%);
-  background: -o-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%);
-  background: -ms-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%);
-  background: linear-gradient(to bottom,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%);
-  padding-bottom: 5px;
-  font-style: normal;
+  background: #fff !important;
+  background: -moz-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%) !important;
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(50%,#fff),color-stop(50%,rgba(255,241,151,.5)),color-stop(100%,rgba(255,241,151,.5)))!important;
+  background: -webkit-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%) !important;
+  background: -o-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%) !important;
+  background: -ms-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%)!important;
+  background: linear-gradient(to bottom,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%)!important;
+  padding-bottom: 5px !important;
+  font-style: normal !important;
 }
 
 /* headings */
