@@ -200,7 +200,7 @@ a li:hover {
   background: -ms-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%)!important;
   background: linear-gradient(to bottom,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%)!important;
   padding-bottom: 5px !important;
-  font-style: normal !important;
+  /*font-style: normal !important;*/
 }
 
 /* headings */
