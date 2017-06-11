@@ -191,6 +191,17 @@ a li:hover {
        -o-transition: all .25s ease;
           transition: all .25s ease;
 }
+#intro em {
+  background: #fff;
+  background: -moz-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(50%,#fff),color-stop(50%,rgba(255,241,151,.5)),color-stop(100%,rgba(255,241,151,.5)));
+  background: -webkit-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%);
+  background: -o-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%);
+  background: -ms-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%);
+  background: linear-gradient(to bottom,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%);
+  padding-bottom: 5px;
+  font-style: normal;
+}
 
 /* headings */
 h1 {
@@ -611,6 +622,11 @@ body .js-ajax-holder .js-load-more {
   color: transparent !important;
   color: #f1f1f1;
 } 
+.blob {
+  background: url('./images/blob.png');
+  background-repeat: no-repeat;
+  background-position: 10%;
+}
 
 /* -----------------------------------------------------------
   3.2.2 Main Navigation
