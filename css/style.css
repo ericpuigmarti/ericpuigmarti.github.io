@@ -394,6 +394,17 @@ body:not(.single-post) a:hover .left-arrow:after,
           transition: all .25s ease;
 }
 
+/*.project-header {
+  transition: border .3s ease,padding .3s ease
+}
+.project-header:hover{
+  padding: 0;
+  padding-top: 0;
+  border: 1em solid #fff;
+  border-top: 0;
+  transition: border .3s ease,padding .3s ease
+}*/
+
 /* overlay color when filters are opened. Just enable/uncommment this rule
   in case you would like some color overlay when opening the filters */
 /* .fltrs-fx-fade #fltrs-overlay { background: rgba(21, 39, 127, 0.95); } */
@@ -406,7 +417,25 @@ body:not(.single-post) a:hover .left-arrow:after,
 .form-control:focus,
 .form-control:active {  border-bottom: 1px solid #1106FF; }
 .blog-sidebar .widget_search input[type="search"]:hover { border-bottom: 1px solid #1106FF; }
-blockquote { border-left: 2px solid #1106FF; }
+blockquote { 
+  /*border-left: 2px solid #1106FF; */
+  border-left: none;
+  font-size: 2.125rem;
+  margin-bottom: 2.250rem;
+  margin-top: 1.125rem;
+  padding-left: 0;
+  line-height: 3.375rem;
+}
+blockquote.pullquote:before, blockquote.pullquote:after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 1px;
+  background: rgba(17,6,255,0.25);
+  margin: 0 auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
 .nav-pills > li > a:hover,
 .nav-pills > li.active > a { border: 2px solid #1106FF; }
 
@@ -963,6 +992,8 @@ h1 span {
   .heading-section .intro p { font-size: 15px; width: 95%; }
   .portfolio-single #main .heading-section p { width: 80%; }
   .step-number {font-size: 2.4em;top: 130%;  left: 5%;}
+  /*.quote {max-width: 90vw !important;}*/
+
 }
 .parallax {
 	-webkit-transition: transform 0s ease;
@@ -1447,9 +1478,9 @@ body.fltrs-fx-curtain .filter-nav.bye { left: 100%; opacity: 0; }
           transform: translateY(0);
 }
 .results {
-  /*background: red;*/
-  background: #f9f9f9;
+  /*background: #f9f9f9;*/
   padding: 1em;
+  border: 1px solid rgba(0,0,0,0.1);
 }
 .steps {
     /*font-family: custom_2440;*/
@@ -4196,7 +4227,7 @@ this improves this issue. TODO */
 	blockquote { margin-left: 0; }
 	blockquote q { opacity: 0.5; }
 	.post-article .text .excerpt { font-size: 0.9em; line-height: 1.35em; }
-	
+	/*.quote {max-width: 70vw !important;}*/
 	.single-post .link-area { margin-bottom: 100px; }
 	
 	.comments-col .heading-block { width: 90%; }
