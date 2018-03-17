@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
-	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="description" content="Eric Puigmarti is a product designer helping startups and established companies design digital experiences for their customers.">
 	<!-- Twitter Cards -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@ericpuigmarti" />
-	<meta name="twitter:creator" content="@ericpuigmarti" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ericpuigmarti">
+	<meta name="twitter:creator" content="@ericpuigmarti">
 	<!-- Open Graph | Facebook & Google Plus -->
 	<meta property="og:title" content="Eric Puigmarti - Designer and Brunch Lover from Toronto">
 	<meta property="og:url" content="http://ericpuigmarti.com">
@@ -21,13 +21,13 @@
 	<title>Eric Puigmarti - Designer and Brunch Lover from Toronto</title>
 	
 	<!-- Favicon -->	
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
 
 	<!-- Google Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700%7CWork+Sans:200,400,300,500' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700%7CWork+Sans:200,400,300,500" rel="stylesheet" type="text/css">
 	<!-- Main styles -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -39,11 +39,9 @@
 <!-- "fltrs-fx-curtain" adds the curtain effect overlay when filtering -->
 <!-- notice that in case you want to add any effect, you will need to choose -->
 <!-- from one or another. Both filters could cause unexpected behaviors -->
-<body class="portfolio-page fltrs-fx-fade fltrs-scale header-image" data-page="portfolio">
+<body class="portfolio-page fltrs-fx-fade fltrs-scale header-image top-page" data-page="portfolio" data-gr-c-s-loaded="true">
 	<!-- Preloader -->
-	<div id="preloader">
-		<span class="preloader-ani"></span>
-	</div>
+	
 
 	<div id="wrapper">
 		<!-- Head, logo & navigation -->
@@ -149,7 +147,7 @@
 					<div class="row col-md-8 col-md-push-2">
 						<h2 class="text-center highlight mar-top-md">Featured Work</h2>
 						<h4 class="text-center">
-						<em> Product Strategy & Research / UX & UI Design / Prototyping & User Testing </em>
+						<em> Product Strategy &amp; Research / UX &amp; UI Design / Prototyping &amp; User Testing </em>
 						<!-- <em>Great design focuses on understanding people, how they behave, what they care about, and what they want to achieve.</em> --></h4>
 					</div>
 				</div>
@@ -157,7 +155,7 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<a class="fltrs-trggr go" href="#prtfl-anchor">
-								<div class="filters-icon">
+								<div class="filters-icon fix">
 						            <div class="icn-wrapper">
 						                <i class="eyecon"></i>
 						                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16">
@@ -172,7 +170,7 @@
 							<!-- just by adding 'data-filter' and your category as value -->
 							<!-- for example: -->
 							<!-- data-filter="branding" -->
-								<li class="active"><a href="#prtfl-anchor" data-filter="all">All</a></li>
+								<li class="active"><a href="#prtfl-anchor" data-filter="all">All Projects</a></li>
 								<li><a href="#prtfl-anchor" data-filter="mobile">Mobile</a></li>
 								<li><a href="#" data-filter="web">Web</a></li>
 								<!-- <li><a href="#prtfl-anchor" data-filter="UX">UX Design</a></li> -->
@@ -183,40 +181,47 @@
 					</div>
 					<!-- Set here the columns number: 'cols-2' is the default value -->
 					<div class="js-ajax-holder projects cols-2">
-						<div class="row portfolio-list js-ajax-container">
+						<div class="row portfolio-list js-ajax-container fadeit" style="position: relative; height: 1695.76px;">
 							<!-- 'data-filter' attributes allow you to join the item with the category -->
 							<!-- this category must be the same that previously within 'filter-nav' -->
 							
 							<!-- Project 1 -->
-							<div class="img-holder prjct-item" data-filter="web mobile">
+							<div class="img-holder prjct-item" data-filter="web mobile" style="position: absolute; left: 0%; top: 0px; width: 49.79%;">
 								<a href="./freshbooks.html">
 									<img src="images/grid-projects/freshbooks_square.jpg" alt="FreshBooks, Small Business Accounting Software That Makes Billing Painless - Cover photo" class="img-responsive" width="672" height="672">
 									<span class="caption">FreshBooks.<span>— Helping Small Businesses Get Paid Faster</span></span>
 								</a>
 							</div>
 							<!-- Project 2 -->
-							<div class="img-holder prjct-item" data-filter="mobile sideproject">
-								<a href="https://dribbble.com/shots/3578415-Let-s-Do-Brunch-App-Prototype" target="_blank">
-									<img src="images/grid-projects/lets-do-brunch_800x600.jpg" alt="Let's Do Brunch, Interactive Prototype App, Side Project" class="img-responsive" width="672" height="448">
-									<span class="caption">Let's Do Brunch.<span>— Personal Side Project</span></span>
-								</a>
-							</div>
-							<!-- Project 3 -->
-							<div class="img-holder prjct-item" data-filter="web mobile">
+							<div class="img-holder prjct-item" data-filter="web mobile" style="position: absolute; left: 0%; top: 528px; width: 49.79%;">
 								<a href="./telus.html">
 									<img src="images/grid-projects/telus-01-square.jpg" alt="TELUS Mobility, MyAccount Project - Cover photo" class="img-responsive" width="672" height="448">
 									<span class="caption">TELUS Mobility.<span>— A phone bill that makes sense</span></span>
 								</a>
 							</div>
+							<!-- Project 3 -->
+							<div class="img-holder prjct-item" data-filter="mobile sideproject" style="position: absolute; left: 49.9642%; top: 0px; width: 49.79%;">
+								<a href="http://www.jobswithdogs.co/" target="_blank">
+									<img src="images/grid-projects/jobs.jpg" alt="Jobs With Dogs, Discover the best dog-friendly tech companies" class="img-responsive" width="672" height="672">
+									<span class="caption">Jobs With Dogs.<span>— Side Project</span></span>
+								</a>
+							</div>
 							<!-- Project 4 -->
-							<div class="img-holder prjct-item" data-filter="web startup">
+							<div class="img-holder prjct-item" data-filter="mobile sideproject" style="position: absolute; left: 49.9642%; top: 0px; width: 49.79%;">
+								<a href="https://framer.cloud/PQMTD" target="_blank">
+									<img src="images/grid-projects/lets-do-brunch_800x600.jpg" alt="Let's Do Brunch, Interactive Prototype App, Side Project" class="img-responsive" width="672" height="448">
+									<span class="caption">Let's Do Brunch.<span>— Side Project</span></span>
+								</a>
+							</div>
+							<!-- Project 6 -->
+							<div class="img-holder prjct-item" data-filter="web startup" style="position: absolute; left: 49.9642%; top: 528px; width: 49.79%;">
 								<a href="./shifthub.html">
 									<img src="images/grid-projects/shifthub-01-square.jpg" alt="Shifthub, Web App project - Cover photo " class="img-responsive" width="672" height="672">
 									<span class="caption">Shifthub.<span>— A smarter way to organize and schedule staff</span></span>
 								</a>
 							</div>	
-							<!-- Project 5 -->
-							<div class="img-holder prjct-item" data-filter="mobile startup">
+							<!-- Project 6 -->
+							<div class="img-holder prjct-item" data-filter="mobile startup" style="position: absolute; left: 0%; top: 1001px; width: 49.79%;">
 								<a href="./venio.html">
 									<img src="images/grid-projects/venio-01-square.jpg" alt="Venio Health, Mobile App Project - Cover photo" class="img-responsive" width="672" height="448">
 									<span class="caption">Venio Health.<span>— Healthy eating made beautifully simple</span></span>
@@ -236,7 +241,7 @@
 				</div>
 				</section>
 				<!-- Go top button/arrow -->
-				<a href="#wrapper" class="btn-top go js-link"><i class="arrow right-arrow"></i></a>
+				<a href="#wrapper" class="btn-top go js-link disabled" style="right: -7px;"><i class="arrow right-arrow"></i></a>
 			</main>
 
 			<!-- Page body/contents -->
@@ -248,7 +253,7 @@
 					<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
 						<div class="row">
 							<!-- <img class="img-responsive full-width-img lazy col-sm-12" src="images/studio-picture.jpg" alt="Studio"> -->
-							<img class="img-responsive full-width-img lazy col-sm-12 mar-btm-md" src="./images/eric.jpg" alt="Eric Puigmarti - Portrait Photo Outdoors">
+							<img class="img-responsive full-width-img lazy col-sm-12 mar-btm-md unveil-placeholder" src="images/eric.jpg" alt="Eric Puigmarti - Portrait Photo Outdoors">
 							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415" style="">
 							<path d="M20.5,20.5h260v375h-260V20.5z"></path>
 						</svg>
@@ -277,10 +282,11 @@
 							<!-- <img class="img-responsive full-width-img lazy col-sm-12 mar-btm-md" src="./images/eric.jpg" alt="Studio"> -->
 
 							<p class="text-middle alt-font highlight">Eric is a Product Designer from Toronto, currently building digital products at FreshBooks.</p>
-							<p class="text-bigger alt-font">With an obsession for well-designed products and a relentless attention to detail, Eric is passionate about designing and building meaningful products. It's what gets him up in the morning <em>(and also ☕)</em>.</p>    
-							<p class="text-bigger alt-font"> After shifting his passion and creativity from music to technology, Eric studied Art & Design to help bring his creative ideas to life by building digital experiences. Ever since, he has crafted a variety of web and mobile experiences working with small startups and established companies.</p>
+							<p class="text-bigger alt-font">Over the past six years, Eric has worked with companies of all sizes, to establish an iterative design process to help build and launch their first MVPs or improve existing products.</p>
+							<!-- <p class="text-bigger alt-font">With an obsession for well-designed products and a relentless attention to detail, Eric is passionate about designing and building meaningful products. It's what gets him up in the morning <em>(and also ☕)</em>.</p>    
+							<p class="text-bigger alt-font"> Eric studied Art &amp; Design to help bring his creative ideas to life by building digital experiences. Ever since, he has crafted a variety of web and mobile experiences working with small startups and established companies.</p> -->
 
-						<p class="mar-top-xs highlight">When he's not designing, he can be found learning to code, spending time with his wife, his dog <a href="https://www.instagram.com/bagel.thegoldendoodle/" target="_blank">Bagel</a>, <!-- photographing with his wife's food, --> or working on a few personal <a href="http://dribbble.com/ericpuigmarti" target="_blank">side projects</a>.</p>
+						<p class="mar-top-xs highlight">When he's not designing, he is often spending time with his family, his dog <a href="https://www.instagram.com/bagel.thegoldendoodle/" target="_blank">Bagel</a>, or working on a few personal <a href="http://dribbble.com/ericpuigmarti" target="_blank">side projects</a>.</p>
 						</div>
 					</div>
 
@@ -319,7 +325,9 @@
 							<hr class="mar-top-sm">
 							<h4 class="alt-font mar-btm-xs highlight underline">Publications &amp; Recognitions</h4>
 							<ul class="list-unstyled mar-top-xs alt-font">
-								<a href="http://webbyawards.com/2017/websites/general-website/financial-servicesbanking" target="_blank"><li class="awards">2017 Webby Award Nominee - FreshBooks</li></a>
+								<!-- <a href="https://soundcloud.com/framework_podcast" target="_blank"><li class="awards">2018 Framework Podcast - Interview</li></a> -->
+
+								<a href="https://www.webbyawards.com/winners/2017/websites/general-website/financial-servicesbanking/" target="_blank"><li class="awards">2017 Webby Award Nominee - FreshBooks</li></a>
 								
 								<a href="https://journeymap.soshal.ca/freshbooks-ux-designer-advice-on-design-sprints-and-dating-coworkers-30d06b566744" target="_blank"><li class="awards">2016 Journey Map - Podcast Interview</li></a>
 								<br>
@@ -334,7 +342,7 @@
 							<h3 class="highlight mar-btm-sm">Let's build something cool together</h3>
 							<!-- <p>Let's build something cool together.</p> -->
 							<div class="col-xs-12 col-sm-12 col-md-8 col-md-push-2">
-								<p class="underline">Get in touch if you would like to grab a coffee, chat, <!-- collaborate on a project, --> or just <a href="mailto:&#101;&#114;&#105;&#099;&#046;&#112;&#117;&#105;&#103;&#109;&#097;&#114;&#116;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;?subject=So%20I%20was%20on%20your%20site%20and%20...&body=So%20I%20was%20on%20your%20site%20and%20...">say Hi!</a></p>
+								<p class="underline">Get in touch if you would like to grab a coffee, chat, <!-- collaborate on a project, --> or just <a href="mailto:eric.puigmarti@gmail.com?subject=I%20was%20just%20on%20your%20website%20...&amp;body=I%20was%20just%20on%20your%20website%20...">say Hi!</a></p>
 							</div>
 						</section>	
 						</div>
@@ -378,11 +386,11 @@
 			<span class="title"></span>
 			<span class="subtitle"></span>
 		</div>
-	</div>
+	
 	<!-- #/wrapper -->
 
 	<!-- Main scripts -->
-	<script src="js/vendor/jquery.js"></script>
+	<script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="js/vendor/jquery.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/bootstrap.js"></script>
@@ -412,5 +420,5 @@
 
 	</script>
 
-</body>
-</html>
+
+<span style="border-radius: 3px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased;">Save</span><span style="width: 24px; height: 24px; background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxtYXNrIGlkPSJtIj48cmVjdCBmaWxsPSIjZmZmIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHJ4PSI2IiByeT0iNiIvPjxyZWN0IGZpbGw9IiMwMDAiIHg9IjUiIHk9IjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgcng9IjEiIHJ5PSIxIi8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMTAiIHk9IjAiIHdpZHRoPSI0IiBoZWlnaHQ9IjI0Ii8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMCIgeT0iMTAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0Ii8+PC9tYXNrPjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9IiNmZmYiIG1hc2s9InVybCgjbSkiLz48L3N2Zz4=&quot;) 50% 50% / 14px 14px no-repeat rgba(0, 0, 0, 0.4); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; border-radius: 12px;"></span><iframe id="freshbooks-embedded-tracker_qy9s0mva3" class="removed freshbooks-embedded-tracker" style="opacity: 0;"></iframe><link href="chrome-extension://mkbmdcokiphabelhplbmfbmpmcgmaope/tracker.embedded.css" rel="stylesheet" type="text/css"></body></html>
