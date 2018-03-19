@@ -202,7 +202,7 @@ a li:hover {
   padding-bottom: 5px !important;
   /*font-style: normal !important;*/
 }
-body:before {
+#homepage:before {
     content: ' ';
     position: fixed;
     bottom: 0;
@@ -210,7 +210,7 @@ body:before {
     width: 100%;
     height: 100%;
     /*background-image: url(https://cdn.dribbble.com/users/2092964/screenshots/4132887/attachments/945443/dribbble_first_shot.jpg);*/
-    /*background-image: url(../images/blob.gif); */
+    background-image: url(../images/blob.gif); 
     background-size: auto 640px;
     background-repeat: no-repeat;
     background-position: left bottom;
