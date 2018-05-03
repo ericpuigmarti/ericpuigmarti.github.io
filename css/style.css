@@ -210,13 +210,12 @@ a li:hover {
     width: 100%;
     height: 100%;
     /*background-image: url(https://cdn.dribbble.com/users/2092964/screenshots/4132887/attachments/945443/dribbble_first_shot.jpg);*/
-    background-image: url(../images/blob.gif); 
+    /*background-image: url(../images/blob.gif); */
     background-size: auto 640px;
     background-repeat: no-repeat;
     background-position: left bottom;
     z-index: -1;
 }
-
 /* headings */
 h1 {
   font-size: 55px;
@@ -3524,6 +3523,13 @@ textarea:-ms-input-placeholder { color: #1D1D1D !important; opacity: 1 !importan
 .single-post .links-section .right-arrow:after { border-left: 5px solid rgb(255, 255, 255); }
 .widget a:hover .right-arrow { right: 3%; opacity: 1; }
 .widget a:hover .left-arrow { left: 0%; opacity: 1; }
+.articleTitle:hover {text-decoration: underline;
+color: red;    
+      -webkit-transition: all 0.2s ease-out;
+       -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+         -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;}
 
 /* ---------------------------------------------------------
 5. Responsive behaviors
