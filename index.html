@@ -27,7 +27,7 @@
 	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700%7CWork+Sans:200,400,300,500" rel="stylesheet" type="text/css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700%7CWork+Sans:200,400,300,500" rel="stylesheet" type="text/css"> -->
 	<link rel="stylesheet" href="https://use.typekit.net/iei6mij.css">
 	<!-- Main styles -->
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -67,7 +67,7 @@
 
 					</div>
 					<!-- Main navigation -->
-					<div class="collapse navbar-collapse" id="navbar" style="display: none !important;">
+					<div class="collapse navbar-collapse" id="navbar" style="">
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="index.html" data-title="Home" data-subtitle="From the top">Home</a></li>
 							<li class="">
@@ -92,11 +92,10 @@
 			<main id="main" class="portfolio-page">
 				<!--  -->
 				<!-- Page head/intro title & subtitle -->
-				<div class="container heading-section parallax">
-					<div class="intro big-heading col-sm-12">
+				<div class="container heading-section parallax columns">
+					<div class="column intro big-heading col-sm-12 col-md-9 col-mx-auto">
 						<!-- <h1>Eric — A product designer from Toronto, who focuses on interactive experiences & mobile apps, currently building digital products at <a href="">FreshBooks</a>.</h1> -->
-						<h1><span id="intro">Eric Puigmarti is a <em>product designer</em> helping startups and established companies design <em>human-centered</em> digital experiences.<!-- for their customers --><!-- grow their businesses --></span></h1>
-						<!-- <h1>Eric Puigmarti <span>is a User Experience Designer & Researcher solving customer needs through digital experiences</span></h1> -->
+						<h1><span id="intro">Hi, I’m Eric — a Product Designer helping startups and established companies design <em>human-centered</em> digital experiences.<!-- for their customers --><!-- grow their businesses --></span></h1>
 
 						<!-- Scroll down -->
 						<!-- <div class="mar-top-sm">
@@ -106,34 +105,55 @@
 						</div> -->
 						<!-- <span class="step-number">Eric Puigmarti</span> -->
 					</div>
+					<!-- Blob -->
+						<!-- <svg class="blob-svg" width="700" height="600" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" filter="url(#blob-filter)">
+						  <defs>
+						    <filter id="blob-filter">
+						      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+						      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						      <feBlend in="SourceGraphic" in2="goo" />
+						    </filter>
+						    <mask id="blob-mask">
+						      <ellipse class="ellipse1"></ellipse>
+						      <ellipse class="ellipse2"></ellipse>
+						      <circle class="circle1"></circle>
+						      <circle class="circle2"></circle>
+						      <circle class="circle3"></circle>
+						      <circle class="circle4"></circle>
+						    </mask>
+						    <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0" 
+						      gradientUnits="userSpaceOnUse" 
+						      gradientTransform="matrix(-440.643 439.505 -439.505 -440.643 762.505 247.708)">
+						      <stop offset="0.2" stop-color="#FEF7D0"/>
+						      <stop offset="1" stop-color="#D7EAFF"/>
+						    </linearGradient>
+						  </defs>
+						  <rect x="0" y="0" width="600" height="600" mask="url(#blob-mask)" fill="url(#gradient)"/>
+						</svg> -->
 				</div>
 				<!--  -->
 				<!-- Process Section -->
 				<!--  -->
 				<section id="process" class="container" style="display: none !important;">
 					<div class="row">
-
-						<div class="mar-top-md mar-btm-xs text-center">
+<!-- 						<div class="mar-top-md mar-btm-xs text-center">
 							<h2 class="highlight underline">Process.</h2>
 						</div>
-						<!-- Learn -->
 						<div class="col-sm-4 mar-top-md mar-btm-md">
 						<hr class="mar-top-sm">
 							<h4 class="highlight">Learn</h4>
 							<p class="text-bigger alt-font">Understanding and speaking to real customers is essential and the best way to build something meaningful.</p>
 						</div>
-						<!-- Build -->
 						<div class="col-sm-4 mar-top-md mar-btm-md">
 						<hr class="mar-top-sm">
 							<h4 class="highlight">Build</h4>
 							<p class="text-bigger alt-font">Transferring insights and ideas into prototypes, helps validate assumptions along the way.</p>
 						</div>
-						<!-- Love -->
 						<div class="col-sm-4 mar-top-md mar-btm-md">
 						<hr class="mar-top-sm">
 							<h4 class="highlight">Love</h4>
 							<p class="text-bigger alt-font">Using insights to build products that not only you'll love, but ones your customers will love too.</p>
-						</div>
+						</div> -->
 					</div> <!-- /row -->
 				</section>  <!-- /div id -->
 
@@ -203,7 +223,7 @@
 							<!-- Project 3 -->
 							<div class="img-holder prjct-item" data-filter="mobile sideproject" style="position: absolute; left: 49.9642%; top: 0px; width: 49.79%;">
 								<a href="http://www.jobswithdogs.co/" target="_blank">
-									<img src="images/grid-projects/jobs.jpg" alt="Jobs With Dogs, Discover the best dog-friendly tech companies" class="img-responsive" width="672" height="672">
+									<img src="images/grid-projects/jobswithdogs.jpg" alt="Jobs With Dogs, Discover the best dog-friendly tech companies" class="img-responsive" width="672" height="672">
 									<span class="caption">Jobs With Dogs.<span>— Side Project</span></span>
 								</a>
 							</div>
@@ -256,7 +276,7 @@
 							<!-- <img class="img-responsive full-width-img lazy col-sm-12" src="images/studio-picture.jpg" alt="Studio"> -->
 							<img class="img-responsive full-width-img lazy col-sm-12 mar-btm-md unveil-placeholder" src="images/eric.jpg" alt="Eric Puigmarti - Portrait Photo Outdoors">
 							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415" style="">
-							<path d="M20.5,20.5h260v375h-260V20.5z"></path>
+							<!-- <path d="M20.5,20.5h260v375h-260V20.5z"></path> -->
 						</svg>
 						</div>
 						<br>
@@ -299,23 +319,23 @@
 								<li>Understanding Customer Problems</li>
 								<li>Problem/Solution Validation</li>
 								<li>Experience Mapping</li>
-								<li>Running Lean Experiments</li>								
+								<li>Usability Testing</li>								
 							</ul>
 							<br>
 							<ul class="list-unstyled alt-font">
 								<li><strong class="underline">User Experience Design</strong></li>
-								<li>Leading Group Ideation</li>
+								<li>Design Sprints</li>
 								<li>High-fidelity Design</li>
 								<li>Interaction Design</li>
-								<li>Interactive Prototyping</li>
-								<li>Usability Testing</li>
+								<li>Design Systems</li>
+								<li>Running Lean Experiments</li>
 							</ul>
 						</div>
 						<div class="col-sm-6 col-xs-12 col-md-5 mar-btm-md">
 							<!-- Spotify Feed -->
 							<hr class="mar-top-sm">
 							<h4 class="alt-font mar-btm-xs highlight underline">What I'm Reading...</h4><br>
-								<a href="https://headspace.design/a-mindful-design-process-f4a4641ee88f?source=bookmarks---------0----------------&gi=87f29db49cfb" target="_blank"><p class="mar-top-xs"><strong><h4 class="highlight articleTitle">A Mindful Design Process</a></h4></strong> by François Chartrand on <strong>Medium</strong></p></a>
+								<a href="https://headspace.design/a-mindful-design-process-f4a4641ee88f?source=bookmarks---------0----------------&gi=87f29db49cfb" target="_blank"><p class="mar-top-xs"><h4 class="highlight articleTitle">A Mindful Design Process</a></h4> by François Chartrand on <strong>Medium</strong></p></a>
 								<!-- <div class="reading" sheetsu="https://sheetsu.com/apis/v1.0su/9fe85c53bb58" sheetsu-limit="1" sheetsu-ignore-case="true">
 								  <h4><a href="{{url}}" target="_blank">{{title}}</a></h4> <p>by <span id="author">{{author}}</span> on Medium </div> -->
 								
@@ -388,7 +408,9 @@
 	<!-- #/wrapper -->
 
 	<!-- Main scripts -->
-	<script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="js/vendor/jquery.js"></script>
+	<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/bootstrap.js"></script>

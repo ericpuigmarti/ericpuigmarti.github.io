@@ -87,7 +87,9 @@ body {
   line-height: 24px;
   font-weight: normal;
   -ms-overflow-style: scrollbar;
-  overflow-x:hidden
+  overflow-x: hidden;
+  font-family: "europa",sans-serif;
+
 }
 a [class^="icon-"],
 a [class*=" icon-"] {text-decoration: none !important;}
@@ -136,7 +138,7 @@ a:focus,
          -o-transition: all 0.2s ease-out;
             transition: all 0.2s ease-out;
 }
-
+p {color: #5E6B9A;}
 a, a:focus { outline: none !important; }
 a:hover,
 p > a:hover { color: inherit; }
@@ -193,6 +195,7 @@ a li:hover {
 }
 #intro em {
   background: #fff !important;
+  /*background-image: linear-gradient(-100deg, rgba(255, 255, 255, 0), yellow 85%, rgba(255, 255, 255, 0));*/
   background: -moz-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%) !important;
   background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(50%,#fff),color-stop(50%,rgba(255,241,151,.5)),color-stop(100%,rgba(255,241,151,.5)))!important;
   background: -webkit-linear-gradient(top,#fff 0%,#fff 50%,rgba(255,241,151,.5) 50%,rgba(255,241,151,.5) 100%) !important;
@@ -218,7 +221,7 @@ a li:hover {
 }
 /* headings */
 h1 {
-  font-size: 55px;
+  font-size: 55px !important;
   line-height: 1.175em;
   font-weight: normal;
 }
@@ -658,7 +661,7 @@ body .js-ajax-holder .js-load-more {
   font-weight: 700;
   line-height: 1;
   /*background:url("https://media.giphy.com/media/26BRrOBxIJeN5L3Gg/giphy.gif") repeat;*/
-  background:url("https://media.giphy.com/media/l3vRbQctqp1q2E9Da/source.gif") repeat;
+  /*background:url("https://media.giphy.com/media/l3vRbQctqp1q2E9Da/source.gif") repeat;*/
   /*background:url("http://68.media.tumblr.com/316e3fb39a466c18f30a00a4ac45a3d6/tumblr_o0sc9zjLWl1qzze5co1_500.gif") repeat;*/
   background-position:10px;
   -webkit-background-clip: text;
@@ -666,9 +669,13 @@ body .js-ajax-holder .js-load-more {
   color: #f1f1f1;
 } 
 .blob {
-  background: url('./images/blob.png');
+  /*background: url('./images/blob.png');*/
   background-repeat: no-repeat;
   background-position: 10%;
+}
+#intro {
+  font-size: 32px !important;
+  font-family: "europa",sans-serif;
 }
 
 /* -----------------------------------------------------------
@@ -886,25 +893,19 @@ the change from mobile to desktop menu */
 
 /* Modifiers & general elements
 --------------------------------------------*/
-/* centered big text heading */
-#main .big-heading {
-  width: 100%;
-  line-height: 1.35em;
-  text-align: center;
-  margin: 100px auto 100px auto;
-}
-
-/* regular intro heading */
+/* Intro heading */
 .intro {
   text-align: left;
-  margin-top: 100px;
-  margin-bottom: 10px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  float: none;
+  margin: 0 auto;
 }
 .portfolio-single #main .big-heading,
-.portfolio-single .intro { margin-bottom: 45px; }
+.portfolio-single .intro { margin-bottom: 45px; text-align: center;}
 #main .big-heading h1,
 #main .big-heading p {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 #main .big-heading h1,
@@ -944,6 +945,104 @@ h1 span {
   color: #444444;
   line-height: 1.3;
 }
+/*#blob {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index:-1;
+}*/
+@keyframes from0to360 {
+  from{transform:rotate(0);}
+  to{transform:rotate(360deg);}
+}
+@keyframes from360to0 {
+  from{transform:rotate(360deg);}
+  to{transform:rotate(0deg);}
+}
+@keyframes scaleUp {
+  from{transform:scale(0.8);}
+  to{transform:scale(1);}
+}
+@keyframes scaleDown {
+  from{transform:scale(1);}
+  to{transform:scale(0.8);}
+}
+
+@keyframes from360to0scaled {
+  from{transform:rotate(360deg) scale(1.1); }
+  to{transform:rotate(0deg) scale(0.25);}
+}
+.heroline {
+    display: inline-block;
+    width: 50%;
+    height: 3px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    background-color: #0025F5;
+    /*opacity:0.3;*/
+}
+.blob-svg {
+will-change: transform;
+position: absolute;
+left: 50%;
+z-index: -10;
+}
+
+.circle1 {
+  animation: from0to360 10s linear infinite;
+  cx: 150;
+  cy: 145;
+  r: 100;
+  fill: white;
+  transform-origin: 145px 150px;
+}
+.circle2 {
+  animation: from360to0 20s linear infinite;
+  cx: 150;
+  cy: 155;
+  r: 100;
+  fill: white;
+  transform-origin: 160px 150px;
+}
+
+.circle3 {
+  animation: from0to360 30s linear infinite alternate;
+  cx: 145;
+  cy: 150;
+  r: 100;
+  fill: white;
+  transform-origin: 150px 145px;
+}
+
+.circle4 {
+  animation: from360to0 25s linear infinite;
+  cx: 155;
+  cy: 150;
+  r: 100;
+  fill: white;
+  transform-origin: 150px 155px;
+}
+
+.ellipse1 {
+  animation: from360to0scaled 20s linear infinite alternate;
+  rx: 120;
+  ry: 100;
+  cx: 150;
+  cy: 150;
+  fill: white;
+  transform-origin: 130px 155px;
+}
+.ellipse2 {
+  animation: from0to360 15s linear infinite;
+  rx: 120;
+  ry: 100;
+  cx: 150;
+  cy: 150;
+  fill: white;
+  transform-origin: 150px 155px;
+}
 
 /* media queries for better control
    about headings presentation */
@@ -958,7 +1057,7 @@ h1 span {
 /* Large desktop screens around 1920x1080 */
 @media only screen and (min-width: 1281px) and (max-width: 1920px) {
   #main .heading-section:not(.no-centered-heading) .big-heading h1,
-  .heading-section:not(.no-centered-heading) .intro h1 { font-size: 4vw;/*font-size: 4.75vw;*/ }
+  .heading-section:not(.no-centered-heading) .intro h1 { font-size: 3.125vw;/*font-size: 4vw;*/ }
   #main .heading-section .big-heading p,
   .heading-section .intro p { font-size: 19px; }
   .portfolio-single #main .heading-section p { width: 50%; }
@@ -1587,7 +1686,7 @@ body.fltrs-fx-curtain .filter-nav.bye { left: 100%; opacity: 0; }
 
 /* Heading areas
 --------------------------------------------*/
-#main .heading-section { margin-bottom: 100px; }
+/*#main .heading-section { margin-bottom: 100px; }*/
 .heading-section h1 { margin: 0 0 13px 0; }
 .heading-section small,
 .meta-cats {
@@ -3464,7 +3563,7 @@ textarea:-ms-input-placeholder { color: #1D1D1D !important; opacity: 1 !importan
   opacity: 0.15;
 }
 .top-single-prjct-pag .link:hover { opacity: 1; }
-.project-title { font-size: 7vw !important; }
+.project-title { font-size: 6vw !important; }
 
 /* Template dependent styles
 --------------------------------------------*/
@@ -3524,7 +3623,7 @@ textarea:-ms-input-placeholder { color: #1D1D1D !important; opacity: 1 !importan
 .widget a:hover .right-arrow { right: 3%; opacity: 1; }
 .widget a:hover .left-arrow { left: 0%; opacity: 1; }
 .articleTitle:hover {text-decoration: underline;
-color: red;    
+/*color: red;    */
       -webkit-transition: all 0.2s ease-out;
        -moz-transition: all 0.2s ease-out;
         -ms-transition: all 0.2s ease-out;
