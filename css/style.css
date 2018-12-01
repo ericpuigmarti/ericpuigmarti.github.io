@@ -101,7 +101,7 @@ p > a:visited,
 ul li > a {
   display: inline-block;
   position: relative;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 .heading-holder a,
 #footer ul li > a { font-weight: normal; }
