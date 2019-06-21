@@ -928,7 +928,7 @@ the change from mobile to desktop menu */
 /* Intro heading */
 .intro {
   text-align: left;
-  padding-top: 80px;
+  /*padding-top: 80px;*/
   padding-bottom: 100px;
   float: none;
   margin: 0 auto;
