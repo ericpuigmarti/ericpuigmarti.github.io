@@ -1348,10 +1348,10 @@ setInterval(function() {
 /*	08. SMOOTH SCROLLING
 /*-----------------------------------------------------------------------------------*/
 	
-$('.goto').click(function(e){
-    $('html,body').scrollTo(this.hash,this.hash,  {'axis':'y'});
-    e.preventDefault();
-});
+// $('.goto').click(function(e){
+//     $('html,body').scrollTo(this.hash,this.hash,  {'axis':'y'});
+//     e.preventDefault();
+// });
 
 
 /*-----------------------------------------------------------------------------------*/
