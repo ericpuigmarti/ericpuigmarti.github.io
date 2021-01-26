@@ -1461,6 +1461,12 @@ body.filters-open #footer { opacity: 0; }
 }
 #fltrs-overlay.hi { cursor: url(../images/crsr-cross.png) 8 8, move !important; }
 
+#contact-list{
+  list-style: none;
+  margin: 0s;
+  padding: 0;
+}
+
 /* filters curtain effect */
 body.fltrs-fx-curtain .filter-nav.bye { left: 100%; opacity: 0; }
 .fltrs-fx-curtain #fltrs-overlay {
