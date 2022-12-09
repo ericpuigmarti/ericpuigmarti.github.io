@@ -674,6 +674,10 @@ body .js-ajax-holder .js-load-more {
   /*color: #1106FF;*/
 }
 
+.align-items-center {
+    align-items: center!important;
+    display: flex !important;
+}
 /* -----------------------  ------------------------------------
   BLOBS
   -----------------------------------------------------------*/
