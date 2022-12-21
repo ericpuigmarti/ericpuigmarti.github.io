@@ -5433,7 +5433,7 @@ button.close {
   border-left-color: #fff;
 }
 .carousel {
-  position: relative;
+  position: relative !important;
 }
 .carousel-inner {
   position: relative;
