@@ -433,6 +433,8 @@ body:not(.single-post) a:hover .left-arrow:after,
 .form-control:focus,
 .form-control:active {  border-bottom: 1px solid #1106FF; }
 .blog-sidebar .widget_search input[type="search"]:hover { border-bottom: 1px solid #1106FF; }
+.carousel-indicators li {border: 1px solid rgb(29, 29, 29) !important;}
+.carousel-indicators .active {background-color: rgb(29, 29, 29) !important;}
 blockquote { 
   /*border-left: 2px solid #1106FF; */
   border-left: none;
