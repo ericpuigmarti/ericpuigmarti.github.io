@@ -625,7 +625,10 @@ figcaption,
 .testimonial-title,
 .portfolio-grid .caption span,
 .media-container .caption .holder,
-.alt-font { font-family: "lora", times, serif; }
+.alt-font { 
+  /* font-family: "lora", times, serif;  */
+  font-family: "europa", arial, sans-serif;
+}
 .text-center {text-align: center !important;}
 /* general details colors > emphasis color */
 h1,
