@@ -138,7 +138,7 @@ a:focus,
          -o-transition: all 0.2s ease-out;
             transition: all 0.2s ease-out;
 }
-p {color: #5E6B9A;}
+p {color: rgba(0,0,0,0.8);}
 a, a:focus { outline: none !important; }
 a:hover,
 p > a:hover { color: inherit; }
@@ -186,7 +186,7 @@ a li {
   /*font-weight: bold;*/
 }
 a li:hover {
-  color: #1106FF;
+  color: #6750A4;
   text-decoration: underline;
   -webkit-transition: all .25s ease;
      -moz-transition: all .25s ease;
@@ -602,7 +602,7 @@ ul { margin-bottom: 45px; padding-left: 20px; }
   3.1 Colors & typography
   ---------------------------------------------------------*/
 
-/* NOTE: blue emphasis default color -> #1106FF or rgb(17, 6, 255) */
+/* NOTE: blue emphasis default color -> #6750A4 or rgb(17, 6, 255) */
 /* SECONDARY BACKUP BLUE -> Less vibrant try: #2A64F8 or rgb(42, 100, 248)*/
 
 /* main font family & font color for body and main text */
@@ -662,11 +662,11 @@ input[type="submit"]:hover,
 .top-single-prjct-pag .project-title-pag,
 .btn-primary .badge,
 .comments-section h4,
-.heading-section .contact-list a:hover { color: #1106FF; }
-.filters-icon .icn-wrapper svg circle { stroke: #1106FF; }
+.heading-section .contact-list a:hover { color: #6750A4; }
+.filters-icon .icn-wrapper svg circle { stroke: #6750A4; }
 /* color for text selection */
-::selection { color: #1106FF; }
-::-moz-selection { color: #1106FF; }
+::selection { color: #6750A4; }
+::-moz-selection { color: #6750A4; }
 
 /* general details colors > emphasis background color */
 #preloader span,
@@ -692,17 +692,17 @@ hr,
 #wrapper .navbar-toggle.collapsed,
 #wrapper .navbar-toggle,
 #wrapper .navbar-toggle,
-#footer { background: #1106FF; }
+#footer { background: #6750A4; }
 
 /* main navigation & other nav details
    like arrows or sidebar widgets */
 .navbar-nav > li > a:active,
 .navbar-nav > li > a:focus,
 .navbar-nav > li > a:hover {color: inherit;}
-.navbar-nav > li > a:hover:after {background: #1106FF;}
+.navbar-nav > li > a:hover:after {background: #6750A4;}
 .navbar-nav > li.open > a,
 .navbar-nav > li.active > a,
-.navbar-nav > li.hover > a { color: #1106FF; }
+.navbar-nav > li.hover > a { color: #6750A4; }
 .navbar-nav > li.open > a:after,
 .navbar-nav > li.active > a:after,
 .navbar-nav > li.hover > a:after,
@@ -710,22 +710,22 @@ hr,
 .single-post .link-area,
 body:not(.single-post) a:hover .arrow,
 #submit-btn .arrow,
-.blog-sidebar .widget a:hover .arrow { background: #1106FF; }
+.blog-sidebar .widget a:hover .arrow { background: #6750A4; }
 body:not(.single-post) a:hover .right-arrow:after,
 #submit-btn .right-arrow:after,
-.blog-sidebar .widget a:hover .right-arrow:after {border-left-color: #1106FF;}
+.blog-sidebar .widget a:hover .right-arrow:after {border-left-color: #6750A4;}
 body:not(.single-post) a:hover .left-arrow:after,
 #submit-btn .left-arrow:after,
-.blog-sidebar .widget a:hover .left-arrow:after {border-right-color: #1106FF;}
+.blog-sidebar .widget a:hover .left-arrow:after {border-right-color: #6750A4;}
 .widget.widget_recent_entries > ul li:hover .wdgt-counter:before,
-.widget_tag_cloud a:hover { border-color: #1106FF; }
+.widget_tag_cloud a:hover { border-color: #6750A4; }
 
 /* overlay color for projects/blog items within the grid when hovering */
 /* portfolio projects overlay when hover the item */
 .portfolio-list .prjct-item a:after,
 /* blog items overlay when hover the post entry */
 .post-article .img-holder .caption  {
-  background: rgba(17, 6, 255, 0.85);
+  background: rgba(79, 55, 139, 0.8);
   -webkit-transition: all .25s ease;
      -moz-transition: all .25s ease;
        -o-transition: all .25s ease;
@@ -748,17 +748,17 @@ body:not(.single-post) a:hover .left-arrow:after,
 /* .fltrs-fx-fade #fltrs-overlay { background: rgba(21, 39, 127, 0.95); } */
 
 /*UI elements*/
-.accordion { border: 5px solid #1106FF; }
-.accordion > li { border-top: 5px solid #1106FF; }
-.accordion .slide-holder { border-top: 5px solid #1106FF; }
+.accordion { border: 5px solid #6750A4; }
+.accordion > li { border-top: 5px solid #6750A4; }
+.accordion .slide-holder { border-top: 5px solid #6750A4; }
 .form-control:hover,
 .form-control:focus,
-.form-control:active {  border-bottom: 1px solid #1106FF; }
-.blog-sidebar .widget_search input[type="search"]:hover { border-bottom: 1px solid #1106FF; }
+.form-control:active {  border-bottom: 1px solid #6750A4; }
+.blog-sidebar .widget_search input[type="search"]:hover { border-bottom: 1px solid #6750A4; }
 .carousel-indicators li {border: 1px solid rgb(29, 29, 29) !important;}
 .carousel-indicators .active {background-color: rgb(29, 29, 29) !important;}
 blockquote { 
-  /*border-left: 2px solid #1106FF; */
+  /*border-left: 2px solid #6750A4; */
   border-left: none;
   font-size: 2.125rem;
   margin-bottom: 2.250rem;
@@ -777,7 +777,7 @@ blockquote.pullquote:before, blockquote.pullquote:after {
   margin-top: 1em;
 }
 .nav-pills > li > a:hover,
-.nav-pills > li.active > a { border: 2px solid #1106FF; }
+.nav-pills > li.active > a { border: 2px solid #6750A4; }
 
 /* secondary emphasis color > yellow (#FFF197) by defaults */
 .btn-shw-form { background: #FFF197; }
@@ -907,7 +907,7 @@ body .js-ajax-holder .js-load-more {
     z-index: 99999;
     /*font-family: "Work Sans", "HelveticaNeue", helvetica, Arial, sans-serif;*/
     font-family: "lora", times, serif; 
-    color: #1106FF;
+    color: #6750A4;
     font-size: 23px;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -995,7 +995,7 @@ body .js-ajax-holder .js-load-more {
 #intro {
   font-size: 32px !important;
   font-family: "europa",sans-serif;
-  /*color: #1106FF;*/
+  /*color: #6750A4;*/
 }
 
 .align-items-center {
@@ -4349,7 +4349,7 @@ this improves this issue. TODO */
     left: 19%;
     right: 19%;
     margin-bottom: 10px;
-    background: #1106FF;
+    background: #6750A4;
   }
   /* sliders & banners */
   .cnt-slider .carousel-inner .carousel-caption {
