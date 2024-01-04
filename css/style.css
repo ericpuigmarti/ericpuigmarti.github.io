@@ -4073,7 +4073,7 @@ textarea:-ms-input-placeholder { color: #1D1D1D !important; opacity: 1 !importan
   opacity: 0.15;
 }
 .top-single-prjct-pag .link:hover { opacity: 1; }
-.project-title { font-size: 6vw !important; width: 100% !important;
+.project-title { font-size: 4.5vw !important; width: 100% !important;
   padding: 0.5em; }
 
 /* Template dependent styles
