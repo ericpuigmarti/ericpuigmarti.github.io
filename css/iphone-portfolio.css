@@ -1,0 +1,745 @@
+/* ==========================================================================
+   iPhone Portfolio Page
+   ========================================================================== */
+
+/* Page background */
+body.iphone-portfolio-page {
+	background: #0a0014;
+	min-height: 100vh;
+}
+
+body.iphone-portfolio-page #header {
+	background: rgba(10, 0, 20, 0.7) !important;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}
+
+body.iphone-portfolio-page #header.sticky {
+	background: rgba(10, 0, 20, 0.92) !important;
+}
+
+body.iphone-portfolio-page #header .navbar-nav > li > a,
+body.iphone-portfolio-page #header .logo a {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+body.iphone-portfolio-page #header .navbar-nav > li > a:hover {
+	color: #fff;
+}
+
+body.iphone-portfolio-page footer#footer {
+	background: #0a0014;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.iphone-portfolio-page footer#footer a {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+body.iphone-portfolio-page footer#footer a:hover {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/* ==========================================================================
+   Stage layout
+   ========================================================================== */
+
+.iphone-stage {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 120px 0 80px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Ambient background glow */
+.iphone-stage::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 58%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 600px;
+	background: radial-gradient(ellipse, rgba(103, 80, 164, 0.22) 0%, transparent 65%);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.iphone-stage .container-fluid {
+	position: relative;
+	z-index: 1;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.iphone-stage-row {
+	display: flex;
+	align-items: center;
+}
+
+/* ==========================================================================
+   Copy column
+   ========================================================================== */
+
+.iphone-copy-col {
+	display: flex;
+	align-items: center;
+	padding: 40px 40px 40px 60px;
+}
+
+.iphone-copy {
+	max-width: 400px;
+}
+
+.iphone-eyebrow {
+	display: block;
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: #6750A4;
+	margin-bottom: 20px;
+	font-family: "Work Sans", sans-serif;
+}
+
+.iphone-headline {
+	font-size: clamp(2.4rem, 4vw, 3.6rem);
+	font-weight: 300;
+	color: #fff;
+	line-height: 1.1;
+	margin: 0 0 24px;
+	font-family: "europa", "Work Sans", sans-serif;
+}
+
+.iphone-desc {
+	font-size: 17px;
+	line-height: 1.7;
+	color: rgba(255, 255, 255, 0.55);
+	font-weight: 300;
+	margin-bottom: 40px;
+	font-family: "Work Sans", sans-serif;
+}
+
+.tap-hint {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 12px;
+	color: #6750A4;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-family: "Work Sans", sans-serif;
+}
+
+/* ==========================================================================
+   Device column
+   ========================================================================== */
+
+.iphone-device-col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.iphone-stage-bg {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.iphone-scale-wrapper {
+	transform-origin: center center;
+	animation: iphone-float 5s ease-in-out infinite;
+	will-change: transform;
+}
+
+@keyframes iphone-float {
+	0%, 100% { transform: translateY(0px); }
+	50%       { transform: translateY(-10px); }
+}
+
+.iphone-scale-wrapper.is-animating {
+	animation: none;
+}
+
+/* ==========================================================================
+   iPhone shell — the outermost positioning/transition container
+   ========================================================================== */
+
+.iphone-shell {
+	position: relative;
+	width: 320px;
+	height: 693px;
+	z-index: 2;
+	transition:
+		top    0.5s cubic-bezier(0.4, 0, 0.2, 1),
+		left   0.5s cubic-bezier(0.4, 0, 0.2, 1),
+		width  0.5s cubic-bezier(0.4, 0, 0.2, 1),
+		height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.iphone-shell.is-expanding {
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100vw !important;
+	height: 100vh !important;
+	z-index: 9993;
+	margin: 0 !important;
+	border-radius: 0 !important;
+}
+
+/* ==========================================================================
+   iPhone frame — the physical body
+   ========================================================================== */
+
+.iphone-frame {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(160deg, #2e2e33 0%, #1c1c20 55%, #111114 100%);
+	border-radius: 54px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow:
+		inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+		0 0 0 10px #111113,
+		0 0 0 11px rgba(255, 255, 255, 0.07),
+		0 40px 80px rgba(0, 0, 0, 0.7),
+		0 0 100px rgba(103, 80, 164, 0.12);
+	position: relative;
+	overflow: hidden;
+	transition: border-radius 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.iphone-shell.is-expanding .iphone-frame {
+	border-radius: 0;
+	box-shadow: none;
+	border-color: transparent;
+}
+
+/* Right power button */
+.iphone-frame::after {
+	content: "";
+	position: absolute;
+	right: -11px;
+	top: 155px;
+	width: 4px;
+	height: 72px;
+	background: #1e1e22;
+	border-radius: 0 2px 2px 0;
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Left buttons (silent toggle + vol up + vol down) */
+.iphone-frame::before {
+	content: "";
+	position: absolute;
+	left: -11px;
+	top: 110px;
+	width: 4px;
+	height: 32px;
+	background: #1e1e22;
+	border-radius: 2px 0 0 2px;
+	box-shadow:
+		-1px 0 0 rgba(255, 255, 255, 0.06),
+		0 52px 0 0 #1e1e22,
+		-1px 52px 0 0 rgba(255, 255, 255, 0.06),
+		0 52px 0 -1px rgba(255, 255, 255, 0.06),
+		0 108px 0 0 #1e1e22,
+		-1px 108px 0 0 rgba(255, 255, 255, 0.06),
+		0 108px 0 -1px rgba(255, 255, 255, 0.06);
+	height: 70px;
+}
+
+/* ==========================================================================
+   iPhone screen
+   ========================================================================== */
+
+.iphone-screen {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 46px;
+	background: #000;
+	overflow: hidden;
+	transition: border-radius 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.iphone-shell.is-expanding .iphone-screen {
+	border-radius: 0;
+}
+
+/* Status bar */
+.iphone-status-bar {
+	position: absolute;
+	top: 14px;
+	left: 0;
+	right: 0;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 26px;
+	z-index: 5;
+	color: #fff;
+}
+
+.status-time {
+	font-size: 15px;
+	font-weight: 600;
+	font-family: "Work Sans", sans-serif;
+	letter-spacing: -0.3px;
+}
+
+.status-icons {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+/* Dynamic Island */
+.iphone-dynamic-island {
+	position: absolute;
+	top: 14px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 120px;
+	height: 36px;
+	background: #000;
+	border-radius: 20px;
+	z-index: 10;
+}
+
+/* ==========================================================================
+   Home screen
+   ========================================================================== */
+
+.iphone-homescreen {
+	position: absolute;
+	top: 58px;
+	left: 0;
+	right: 0;
+	bottom: 24px;
+	background: linear-gradient(180deg, #1a0533 0%, #0d001a 50%, #130028 100%);
+	overflow: hidden;
+	transition: opacity 0.25s ease;
+}
+
+/* Subtle centre glow */
+.iphone-homescreen::before {
+	content: "";
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 220px;
+	height: 220px;
+	background: radial-gradient(ellipse, rgba(103, 80, 164, 0.35) 0%, transparent 68%);
+	pointer-events: none;
+}
+
+/* App grid */
+.homescreen-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	padding: 28px 18px 16px;
+}
+
+/* ==========================================================================
+   App icons
+   ========================================================================== */
+
+.app-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+}
+
+.app-icon:focus {
+	outline: none;
+}
+
+.app-icon:focus .app-icon-face {
+	box-shadow:
+		0 4px 12px rgba(0, 0, 0, 0.5),
+		inset 0 1px 0 rgba(255, 255, 255, 0.15),
+		0 0 0 3px rgba(103, 80, 164, 0.7);
+}
+
+.app-icon-face {
+	width: 60px;
+	height: 60px;
+	border-radius: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	box-shadow:
+		0 4px 12px rgba(0, 0, 0, 0.5),
+		inset 0 1px 0 rgba(255, 255, 255, 0.15);
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+	position: relative;
+}
+
+/* Gloss sheen */
+.app-icon-face::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50%;
+	background: linear-gradient(180deg, rgba(255,255,255,0.12) 0%, transparent 100%);
+	border-radius: 14px 14px 0 0;
+	pointer-events: none;
+}
+
+.app-icon:hover .app-icon-face {
+	transform: scale(1.08);
+	box-shadow:
+		0 8px 24px rgba(0, 0, 0, 0.6),
+		inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.app-icon:active .app-icon-face,
+.app-icon.icon-tapped .app-icon-face {
+	transform: scale(0.88);
+}
+
+@keyframes icon-tap {
+	0%   { transform: scale(1); }
+	30%  { transform: scale(0.82); }
+	80%  { transform: scale(1.04); }
+	100% { transform: scale(1); }
+}
+
+.app-icon.icon-tapped .app-icon-face {
+	animation: icon-tap 0.28s ease-out forwards;
+}
+
+.app-logo {
+	max-width: 44px;
+	max-height: 32px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	filter: brightness(0) invert(1);
+}
+
+.app-icon-label {
+	font-size: 10px;
+	color: rgba(255, 255, 255, 0.88);
+	text-align: center;
+	font-weight: 400;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+	font-family: "Work Sans", sans-serif;
+	max-width: 66px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* ==========================================================================
+   Dock
+   ========================================================================== */
+
+.homescreen-dock {
+	position: absolute;
+	bottom: 12px;
+	left: 14px;
+	right: 14px;
+	height: 72px;
+	background: rgba(255, 255, 255, 0.07);
+	border-radius: 18px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+}
+
+/* Home indicator */
+.iphone-home-indicator {
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 134px;
+	height: 5px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 3px;
+	z-index: 5;
+}
+
+/* ==========================================================================
+   Takeover overlay
+   ========================================================================== */
+
+#takeover-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 9995;
+	background: #0a0014;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+
+#takeover-overlay.is-open {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.takeover-close {
+	position: absolute;
+	top: 28px;
+	right: 28px;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 10;
+	transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.takeover-close:hover {
+	background: rgba(255, 255, 255, 0.18);
+	transform: scale(1.06);
+}
+
+.takeover-close:active {
+	transform: scale(0.94);
+}
+
+.takeover-inner {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 80px 40px 60px;
+	overflow-y: auto;
+}
+
+.takeover-content {
+	max-width: 600px;
+	width: 100%;
+	opacity: 0;
+	transform: translateY(28px);
+	transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+#takeover-overlay.is-open .takeover-content {
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.12s;
+}
+
+/* Project takeover typography */
+.tc-meta {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 10px;
+}
+
+.tc-role,
+.tc-years {
+	font-size: 11px;
+	color: rgba(255, 255, 255, 0.45);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 500;
+	font-family: "Work Sans", sans-serif;
+}
+
+.tc-role::after {
+	content: "·";
+	margin-left: 16px;
+	color: rgba(255, 255, 255, 0.2);
+}
+
+.tc-name {
+	font-size: clamp(2.4rem, 6vw, 4rem);
+	color: #fff;
+	line-height: 1.05;
+	margin: 0 0 14px;
+	font-weight: 300;
+	font-family: "europa", "Work Sans", sans-serif;
+}
+
+.tc-tagline {
+	font-size: 1.15rem;
+	color: rgba(255, 255, 255, 0.6);
+	font-weight: 300;
+	margin-bottom: 36px;
+	line-height: 1.5;
+	font-family: "Work Sans", sans-serif;
+}
+
+.tc-divider {
+	border: none;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	margin: 0 0 28px;
+}
+
+.tc-achievements {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 44px;
+}
+
+.tc-achievements li {
+	padding: 12px 0 12px 30px;
+	position: relative;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 16px;
+	line-height: 1.55;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+	font-family: "Work Sans", sans-serif;
+	font-weight: 300;
+}
+
+.tc-achievements li:last-child {
+	border-bottom: none;
+}
+
+.tc-achievements li::before {
+	content: "→";
+	position: absolute;
+	left: 0;
+	color: #6750A4;
+	font-weight: 400;
+}
+
+.tc-cta {
+	display: inline-block;
+	padding: 14px 32px;
+	background: #6750A4;
+	color: #fff;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+	font-family: "Work Sans", sans-serif;
+	letter-spacing: 0.02em;
+	transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.tc-cta:hover,
+.tc-cta:focus {
+	background: #7c65c0;
+	color: #fff;
+	text-decoration: none;
+	transform: translateY(-1px);
+}
+
+.tc-cta:active {
+	transform: translateY(0);
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 991px) {
+	.iphone-stage-row {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.iphone-copy-col {
+		justify-content: center;
+		padding: 40px 30px 20px;
+	}
+
+	.iphone-copy {
+		max-width: 500px;
+	}
+
+	.tap-hint {
+		justify-content: center;
+	}
+
+	.iphone-device-col {
+		padding-bottom: 60px;
+	}
+
+	.iphone-scale-wrapper {
+		transform-origin: center top;
+		/* float animation still applies via animation property */
+	}
+
+	/* On tablet, scale the phone down slightly so it doesn't overflow */
+	.iphone-shell {
+		transform: scale(0.88);
+		transform-origin: center center;
+	}
+}
+
+@media (max-width: 767px) {
+	.iphone-stage {
+		padding: 90px 0 40px;
+	}
+
+	.iphone-copy-col {
+		padding: 30px 20px 10px;
+	}
+
+	.iphone-shell {
+		transform: scale(0.72);
+		transform-origin: center center;
+	}
+
+	.takeover-inner {
+		padding: 80px 24px 40px;
+		align-items: flex-start;
+	}
+
+	.tc-name {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.iphone-shell {
+		transform: scale(0.58);
+		transform-origin: center center;
+	}
+
+	.iphone-device-col {
+		min-height: 460px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	.iphone-scale-wrapper {
+		animation: none;
+	}
+
+	.iphone-shell,
+	.iphone-frame,
+	.iphone-screen,
+	#takeover-overlay,
+	.takeover-content,
+	.app-icon-face {
+		transition: none !important;
+	}
+}
