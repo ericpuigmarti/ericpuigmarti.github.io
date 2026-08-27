@@ -1820,6 +1820,32 @@ within its container, use this class */
   background: #f9f9f9;
 }
 
+/* From the Blog row links (homepage About section) */
+.blog-row-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px;
+  margin: -8px;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+     -moz-transition: background-color 0.2s ease;
+       -o-transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease;
+}
+.blog-row-link:hover,
+.blog-row-link:focus {
+  background-color: #f9f9f9;
+}
+.blog-row-thumb {
+  flex: 0 0 80px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 /* filters/categories navigation */
 #prtfl-anchor {
   display: inline;
