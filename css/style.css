@@ -548,7 +548,7 @@ h1 {
 }
 h2 {
   font-size: 31px;
-  line-height: 1.1em;
+  line-height: 1.2em;
   font-weight: 700;
   margin-bottom: 35px;
 }
@@ -627,6 +627,14 @@ figcaption,
 .media-container .caption .holder,
 .alt-font {
   font-family: "Bricolage Grotesque", "Inter", arial, sans-serif;
+}
+/* long-form paragraph and list copy reads better in Inter than in a bold
+   display grotesque, even where it carries .alt-font for legacy reasons */
+p.text-bigger.alt-font,
+ul.alt-font,
+ul.alt-font li,
+ul.alt-font a {
+  font-family: "Inter", arial, sans-serif;
 }
 .text-center {text-align: center !important;}
 /* general details colors > emphasis color */
