@@ -88,7 +88,7 @@ body {
   font-weight: normal;
   -ms-overflow-style: scrollbar;
   overflow-x: hidden;
-  font-family: "europa",sans-serif;
+  font-family: "Inter", "HelveticaNeue", helvetica, Arial, sans-serif;
   /*background-color: #EFECE3;*/
   background-color: white;
 }
@@ -544,12 +544,12 @@ a li:hover {
 h1 {
   font-size: 55px !important;
   line-height: 1.175em;
-  font-weight: normal;
+  font-weight: 800;
 }
 h2 {
   font-size: 31px;
   line-height: 1.1em;
-  font-weight: normal;
+  font-weight: 700;
   margin-bottom: 35px;
 }
 h2.centered-text:after { margin: 0 auto; }
@@ -557,23 +557,23 @@ h3 {
   font-size: 27px;
   /*line-height: 1.1em;*/
   line-height: 1.5;
-  font-weight: normal;
+  font-weight: 700;
 }
 h4 {
   font-size: 21px;
   /*line-height: 1em;*/
   line-height: 1.3;
-  font-weight: normal;
+  font-weight: 700;
 }
 h5 {
   font-size: 15px;
   line-height: 1.3em;
-  font-weight: normal;
+  font-weight: 700;
 }
 h6 {
   font-size: 13px;
   line-height: 1em;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 hr {
@@ -606,7 +606,7 @@ ul { margin-bottom: 45px; padding-left: 20px; }
 /* SECONDARY BACKUP BLUE -> Less vibrant try: #2A64F8 or rgb(42, 100, 248)*/
 
 /* main font family & font color for body and main text */
-body { font-family: "Work Sans", "HelveticaNeue", helvetica, Arial, sans-serif !important; color: rgb(29, 29, 29); }
+body { font-family: "Inter", "HelveticaNeue", helvetica, Arial, sans-serif !important; color: rgb(29, 29, 29); }
 
 /* secondary font family */
 h1,
@@ -625,9 +625,8 @@ figcaption,
 .testimonial-title,
 .portfolio-grid .caption span,
 .media-container .caption .holder,
-.alt-font { 
-  /* font-family: "lora", times, serif;  */
-  font-family: "europa", arial, sans-serif;
+.alt-font {
+  font-family: "Inter", arial, sans-serif;
 }
 .text-center {text-align: center !important;}
 /* general details colors > emphasis color */
@@ -908,8 +907,8 @@ body .js-ajax-holder .js-load-more {
 .logo-text a {
     float: left;
     z-index: 99999;
-    /*font-family: "Work Sans", "HelveticaNeue", helvetica, Arial, sans-serif;*/
-    font-family: "lora", times, serif; 
+    font-family: "Inter", "HelveticaNeue", helvetica, Arial, sans-serif;
+    font-weight: 800;
     color: #6750A4;
     font-size: 23px;
     -webkit-transition: all 0.2s ease-in-out;
@@ -997,7 +996,8 @@ body .js-ajax-holder .js-load-more {
 
 #intro {
   font-size: 32px !important;
-  font-family: "europa",sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
   /*color: #6750A4;*/
 }
 
@@ -1282,7 +1282,7 @@ the change from mobile to desktop menu */
   margin-top: 15px;
   line-height: 1.6;
   font-size: 1.25vw;
-  font-family: "europa",sans-serif;
+  font-family: "Inter", sans-serif;
   color: rgba(0,0,0,0.6);
 }
 #main .big-heading .meta-cats,
@@ -2078,7 +2078,7 @@ body.fltrs-fx-curtain .filter-nav.bye { left: 100%; opacity: 0; }
 }
 .portfolio-grid .caption span {
   display: block;
-  font-family: serif;
+  font-family: "Inter", sans-serif;
   text-align: right;
   line-height: 18px;
   font-size: 18px;
