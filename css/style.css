@@ -628,9 +628,8 @@ figcaption,
 .alt-font {
   font-family: "Bricolage Grotesque", "Inter", arial, sans-serif;
 }
-/* long-form paragraph and list copy reads better in Inter than in a bold
-   display grotesque, even where it carries .alt-font for legacy reasons */
-p.text-bigger.alt-font,
+/* list copy reads better in Inter than in a bold display grotesque,
+   even where it carries .alt-font for legacy reasons */
 ul.alt-font,
 ul.alt-font li,
 ul.alt-font a {
@@ -1006,6 +1005,7 @@ body .js-ajax-holder .js-load-more {
   font-size: 32px !important;
   font-family: "Bricolage Grotesque", "Inter", sans-serif;
   font-weight: 800;
+  line-height: 1.1em;
   /*color: #6750A4;*/
 }
 
@@ -1642,6 +1642,7 @@ a.slide_btn {
 }
 /* use this class in order to do bigger the regular text */
 .text-bigger {
+  font-family: "Inter", arial, sans-serif;
   font-size: 20px;
   line-height: 1.7em;
   font-weight: 300;
