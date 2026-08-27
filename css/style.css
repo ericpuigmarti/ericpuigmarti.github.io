@@ -626,7 +626,7 @@ figcaption,
 .portfolio-grid .caption span,
 .media-container .caption .holder,
 .alt-font {
-  font-family: "Inter", arial, sans-serif;
+  font-family: "Bricolage Grotesque", "Inter", arial, sans-serif;
 }
 .text-center {text-align: center !important;}
 /* general details colors > emphasis color */
@@ -907,7 +907,7 @@ body .js-ajax-holder .js-load-more {
 .logo-text a {
     float: left;
     z-index: 99999;
-    font-family: "Inter", "HelveticaNeue", helvetica, Arial, sans-serif;
+    font-family: "Bricolage Grotesque", "Inter", "HelveticaNeue", helvetica, Arial, sans-serif;
     font-weight: 800;
     color: #6750A4;
     font-size: 23px;
@@ -996,7 +996,7 @@ body .js-ajax-holder .js-load-more {
 
 #intro {
   font-size: 32px !important;
-  font-family: "Inter", sans-serif;
+  font-family: "Bricolage Grotesque", "Inter", sans-serif;
   font-weight: 800;
   /*color: #6750A4;*/
 }
@@ -2078,7 +2078,7 @@ body.fltrs-fx-curtain .filter-nav.bye { left: 100%; opacity: 0; }
 }
 .portfolio-grid .caption span {
   display: block;
-  font-family: "Inter", sans-serif;
+  font-family: "Bricolage Grotesque", "Inter", sans-serif;
   text-align: right;
   line-height: 18px;
   font-size: 18px;
